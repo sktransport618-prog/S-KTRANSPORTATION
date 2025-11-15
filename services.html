@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>S&K MEDICAL TRANSPORTATION</title>
+    <!-- Favicon -->
+  <link rel="icon" type="image/png" href="transportwebsitelogo.webp" />
+
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- TOP BAR -->
+<div class="bg-[#0A2A43] text-white text-sm fixed top-0 left-0 w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 py-2 
+              flex flex-wrap items-center justify-between 
+              md:flex-nowrap md:justify-between">
+
+    <!-- Left -->
+    <div class="flex flex-col md:flex-row md:items-center md:space-x-6 space-y-1 md:space-y-0 w-full md:w-auto text-center md:text-left">
+
+      <div class="flex items-center justify-center space-x-2">
+        <i class="fas fa-phone"></i>
+        <span>510-990-1811</span>
+      </div>
+
+      <div class="flex items-center justify-center space-x-2">
+        <i class="fas fa-envelope"></i>
+        <span>info@sandkmedtransit.com</span>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="flex items-center justify-center md:justify-end space-x-4 w-full md:w-auto mt-2 md:mt-0">
+      <i class="fab fa-facebook cursor-pointer"></i>
+      <i class="fab fa-yelp cursor-pointer"></i>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow sticky top-[50px] md:top-[20px] z-40">
+
+  <div class="max-w-7xl mx-auto px-4 py-2 md:py-1 flex items-center justify-between">
+
+    <!-- LOGO -->
+    <div class="flex items-center">
+      <img src="transportwebsitelogo.webp" 
+           alt="Logo" 
+           class="h-28 md:h-28 w-auto object-contain">
+    </div>
+
+    <!-- NAVIGATION (Desktop) -->
+    <nav class="hidden md:flex space-x-8 text-sm font-medium items-center">
+      <a href="index.html" class="hover:text-[#8C0000]">HOME</a>
+      <a href="about.html" class="hover:text-[#8C0000]">ABOUT US</a>
+      <a href="services.html" class="text-[#1E90FF] hover:text-[#8C0000]">OUR SERVICES</a>
+      <a href="contact.html" class="hover:text-[#8C0000]">CONTACT US</a>
+    </nav>
+
+    <!-- PHONE RIGHT SIDE (Desktop) -->
+    <div class="hidden md:flex flex-col items-end justify-center">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-headset text-[#1E90FF]"></i>
+        <span class="font-bold text-[#0A2A43]"> 510-990-1811</span>
+      </div>
+      <span class="text-xs text-gray-500">Mon–Fri: 6AM – 8PM</span>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="md:hidden text-[#0A2A43] text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-4 pb-4">
+    <nav class="flex flex-col space-y-3 text-sm font-medium">
+      <a href="index.html" class="hover:text-[#8C0000]">HOME</a>
+      <a href="about.html" class="hover:text-[#8C0000]">ABOUT US</a>
+      <a href="services.html" class="text-[#1E90FF] hover:text-[#8C0000]">OUR SERVICES</a>
+      <a href="contact.html" class="hover:text-[#8C0000]">CONTACT US</a>
+    </nav>
+
+    <div class="mt-4 flex items-center space-x-2">
+      <i class="fas fa-headset text-[#1E90FF]"></i>
+      <span class="font-bold text-[#0A2A43]"> 510-990-1811</span>
+    </div>
+    <p class="text-xs text-gray-500 mt-1">Mon–Fri: 6AM – 8PM</p>
+  </div>
+</header>
+
+
+<!-- JS -->
+<script>
+  document.getElementById('menuBtn').onclick = () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  };
+</script>
+
+
+
+
+<section class="relative w-full h-[300px] md:h-[400px] overflow-hidden mt-10">
+  
+  <!-- Background Image -->
+  <img src="aboutpagebanner.webp" class="w-full h-full object-cover">
+
+  <!-- Black Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Banner Text -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+    <h1 class="text-white text-4xl md:text-6xl font-bold tracking-wide">
+      OUR SERVICES
+    </h1>
+    <p class="text-white text-lg md:text-xl mt-3 opacity-90">
+      Safe, Reliable & Professional Medical Transportation – 24/7 Availability
+    </p>
+  </div>
+
+</section>
+
+
+
+<!-- ================== SERVICES TITLE SECTION ================== -->
+<section class="bg-[#F5FBFF] py-12 px-4 text-center">
+
+  <!-- Small top label -->
+  <span class="text-sm uppercase tracking-wide bg-[#CDEAFF] text-[#0E4A5A] px-4 py-1 rounded-md font-semibold">
+    Services
+  </span>
+
+  <!-- Main Heading -->
+  <h2 class="mt-4 text-xl md:text-2xl font-semibold text-gray-700 leading-relaxed max-w-4xl mx-auto">
+  S & K Medical Transportation delivers, reliable, on-time, and compassionate Non-Emergency Medical Transportation across the East Bay, Alameda County, and Santa Clara County ensuring every ride is safe, comfortable, and stress-free.
+  </h2>
+
+</section>
+
+
+<!-- ================== GURNEY & STRETCHER TRANSPORTATION ================== -->
+<section class="bg-gradient-to-r from-[#DFF1FF] to-[#B8E3FF] py-12 px-6">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+    <div>
+      <img src="serviceimg1.jpg" class="w-full rounded-lg shadow-lg object-cover">
+    </div>
+
+    <div>
+      <h2 class="text-3xl font-semibold text-[#003B73] mb-4">
+        Gurney & Stretcher Transportation
+      </h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        At S&K Medical Transportation, we specialize in providing safe and dependable
+        Gurney/Stretcher Medical Transportation services...
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-gray-100 py-16 px-6 md:px-12">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        
+        <!-- TEXT SECTION -->
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                Wheelchair Transportation Services
+            </h2>
+
+            <p class="text-gray-700 leading-relaxed mb-4">
+                At S&K Medical Transportation, we specialize in Wheelchair 
+                Transportation, providing services for individuals with 
+                different medical needs. Our experienced and professional 
+                team ensures a safe and comfortable ride, offering 24/7 
+                availability.
+            </p>
+
+            <p class="text-gray-700 leading-relaxed mb-4">
+                We provide door-to-door service to make your transportation 
+                experience convenient. Choose S&K Medical Transportation 
+                for reliable, personalized, and professional Wheelchair 
+                Transportation services.
+            </p>
+
+            <p class="text-gray-700 leading-relaxed">
+                Your care is our commitment.
+            </p>
+        </div>
+
+        <!-- IMAGE SECTION -->
+        <div>
+            <img src="serviceimg2.jpg" 
+                 alt="Wheelchair Transportation" 
+                 class="w-full rounded-lg shadow-lg object-cover">
+        </div>
+
+    </div>
+</section>
+
+<section class="bg-[#0E1A2B] py-16 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+    <!-- Left Image -->
+    <div class="w-full">
+      <img 
+        src="serviceimg3.jpg"
+        alt="Ambulatory Transportation"
+        class="w-full h-auto rounded-lg shadow-lg object-cover"
+      />
+    </div>
+
+    <!-- Right Content -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">
+        Ambulatory Transportation Services
+      </h2>
+
+      <p class="text-gray-300 leading-relaxed mb-4">
+        At <span class="font-semibold text-white">S&K Medical Transportation</span>, 
+        we specialize in providing safe and comfortable 
+        <span class="font-semibold text-white">Ambulatory Transportation</span> services 
+        for individuals with different medical needs.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed mb-4">
+        Our experienced and professional team ensures a smooth ride 
+        with 24/7 availability. We offer reliable door-to-door service 
+        to make your transportation experience easy and convenient.
+      </p>
+
+      <p class="text-gray-300 leading-relaxed">
+        Choose <span class="font-semibold text-white">S&K Medical Transportation</span> 
+        for trusted, personalized, and professional Ambulatory 
+        Transportation services. 
+        <span class="font-semibold text-white">Your care is our commitment.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-gray-50 py-16 px-6 md:px-12">
+  <div class="max-w-7xl mx-auto space-y-20">
+
+    <!-- ------------------ LONG DISTANCE TRANSPORT ------------------ -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Long-Distance Transportation Service
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          Experience comfortable long-distance medical transportation across California with
+          <span class="font-semibold">S&K Medical Transportation</span>. 
+          Our dedicated team ensures your journey is safe, stress-free, and comfortable, providing 
+          non-medical care for individuals with personal or medical needs.  
+          Choose <span class="font-semibold">S&K Medical Transportation</span> for reliable and secure 
+          long-distance healthcare transportation.
+        </p>
+      </div>
+
+      <div>
+        <img src="serviceimg4.jpg" class="w-full h-auto rounded-lg shadow-lg object-cover" alt="Long Distance Transportation" />
+      </div>
+    </div>
+
+    <!-- ------------------ STAIRS ASSISTANCE ------------------ -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center md:flex-row-reverse">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Stairs Assistance Transportation
+        </h2>
+        <p class="text-gray-700 leading-relaxed">
+          Experience safe and comfortable transportation with professional stairs assistance at 
+          <span class="font-semibold">S&K Medical Transportation</span>.  
+          Our trained team ensures smooth support for individuals with mobility challenges.  
+          Choose us for comfort, safety, and reliable assistance at every step.
+        </p>
+      </div>
+
+      <div>
+        <img src="serviceimg5.jpg" class="w-full h-auto rounded-lg shadow-lg object-cover" alt="Stairs Assistance" />
+      </div>
+    </div>
+
+    <!-- ------------------ OUTPATIENT / AFTER SURGERY ------------------ -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Outpatient / After Surgery Transportation
+        </h2>
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Need a ride home after surgery?  
+          <span class="font-semibold">S&K Medical Transportation</span> specializes in safe and 
+          reliable outpatient transportation for individuals recovering from anesthesia.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed mb-4">
+          Our experienced and professional team ensures a smooth and comfortable ride with
+          <span class="font-semibold">24/7 availability</span>.  
+          We offer door-to-door service designed to make your recovery transportation safe and convenient.
+        </p>
+
+        <p class="text-gray-700 leading-relaxed">
+          Choose <span class="font-semibold">S&K Medical Transportation</span> for reliable, 
+          personalized, and professional outpatient transportation services.  
+          <span class="font-semibold">Your care is our commitment.</span>
+        </p>
+      </div>
+
+      <div>
+        <img src="serviceimg6.png" class="w-full h-auto rounded-lg shadow-lg object-cover" alt="Outpatient Transportation" />
+      </div>
+    </div>
+
+    <!-- ------------------ WE DRIVE YOU TO LIST ------------------ -->
+    <div class="bg-white p-10 rounded-xl shadow-md">
+      <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center">
+        We Will Drive You To:
+      </h3>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-gray-700 text-lg">
+
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Hospital</div>
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Clinics</div>
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Dental</div>
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Pharmacy</div>
+
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Physical Therapy</div>
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Nursing Home</div>
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Rehab Centers</div>
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Gym</div>
+
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Airport</div>
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium">Shopping Center</div>
+        <div class="bg-gray-100 p-4 rounded-lg text-center font-medium col-span-2">
+          Everywhere…
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-[#0A2A43] text-white relative">
+
+  <!-- Background overlay image -->
+  <div class="absolute inset-0 opacity-10 bg-cover bg-center"
+       style="background-image: url('your-background-image.jpg');"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- ========== Column 1: About ========== -->
+    <div>
+    
+
+     <p class="text-gray-300 leading-relaxed">
+        We provide professional door-to-door medical transportation with comfort and safety.  
+        S&K Medical Transportation offers non-emergency transportation services across  
+        Fremont, CA — available 24 hours a day, seven days a week.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex space-x-4 mt-6">
+        <a href="#" class="h-10 w-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition">
+          <i class="fab fa-facebook-f text-white text-xl"></i>
+        </a>
+        <a href="#" class="h-10 w-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition">
+          <i class="fab fa-yelp text-white text-xl"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- ========== Column 2: Useful Links ========== -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-4 border-b border-white/20 pb-1">Useful Links</h3>
+
+      <ul class="space-y-3 text-gray-300">
+        <li><a href="index.html" class="hover:text-white">› Home</a></li>
+        <li><a href="services.html" class="hover:text-white">› Our Services</a></li>
+        <li><a href="policy.html" class="hover:text-white">› Privacy Policy</a></li>
+        <li><a href="about.html" class="hover:text-white">› About Us</a></li>
+        <li><a href="fleet.html" class="hover:text-white">› Our Fleet</a></li>
+        <li><a href="contact.html" class="hover:text-white">› Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- ========== Column 3: Contact Us ========== -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-4 border-b border-white/20 pb-1">Contact Us</h3>
+
+     
+
+      <p class="mt-3 text-gray-300">
+        Phone: <span class="text-white font-semibold">510-990-1811</span>
+      </p>
+
+      <p class="text-gray-300">
+        Email: <span class="text-white font-semibold">info@sandkmedtransit.com
+</span>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-white/20 py-4 text-center text-gray-300 text-sm">
+    Copyright © 2025 S&K Medical Transportation. All rights reserved.
+  </div>
+</footer>
+
+
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S&K MEDICAL TRANSPORTATION</title>
+    <!-- Favicon -->
+  <link rel="icon" type="image/png" href="transportwebsitelogo.webp" />
+
+
+  <!-- TailwindCSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- TOP BAR -->
+<div class="bg-[#0A2A43] text-white text-sm fixed top-0 left-0 w-full z-50">
+  <div class="max-w-7xl mx-auto px-4 py-2 
+              flex flex-wrap items-center justify-between 
+              md:flex-nowrap md:justify-between">
+
+    <!-- Left -->
+    <div class="flex flex-col md:flex-row md:items-center md:space-x-6 space-y-1 md:space-y-0 w-full md:w-auto text-center md:text-left">
+
+      <div class="flex items-center justify-center space-x-2">
+        <i class="fas fa-phone"></i>
+        <span>510-990-1811</span>
+      </div>
+
+      <div class="flex items-center justify-center space-x-2">
+        <i class="fas fa-envelope"></i>
+        <span>info@sandkmedtransit.com</span>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="flex items-center justify-center md:justify-end space-x-4 w-full md:w-auto mt-2 md:mt-0">
+      <i class="fab fa-facebook cursor-pointer"></i>
+      <i class="fab fa-yelp cursor-pointer"></i>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow sticky top-[50px] md:top-[20px] z-40">
+
+  <div class="max-w-7xl mx-auto px-4 py-2 md:py-1 flex items-center justify-between">
+
+    <!-- LOGO -->
+    <div class="flex items-center">
+      <img src="transportwebsitelogo.webp" 
+           alt="Logo" 
+           class="h-28 md:h-28 w-auto object-contain">
+    </div>
+
+    <!-- NAVIGATION (Desktop) -->
+    <nav class="hidden md:flex space-x-8 text-sm font-medium items-center">
+      <a href="index.html" class="hover:text-[#8C0000]">HOME</a>
+      <a href="about.html" class="hover:text-[#8C0000]">ABOUT US</a>
+      <a href="services.html" class="hover:text-[#8C0000]">OUR SERVICES</a>
+      <a href="contact.html" class="hover:text-[#8C0000]">CONTACT US</a>
+    </nav>
+
+    <!-- PHONE RIGHT SIDE (Desktop) -->
+    <div class="hidden md:flex flex-col items-end justify-center">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-headset text-[#1E90FF]"></i>
+        <span class="font-bold text-[#0A2A43]"> 510-990-1811</span>
+      </div>
+      <span class="text-xs text-gray-500">Mon–Fri: 6AM – 8PM</span>
+    </div>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button id="menuBtn" class="md:hidden text-[#0A2A43] text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white border-t px-4 pb-4">
+    <nav class="flex flex-col space-y-3 text-sm font-medium">
+      <a href="index.html" class="hover:text-[#8C0000]">HOME</a>
+      <a href="about.html" class="hover:text-[#8C0000]">ABOUT US</a>
+      <a href="services.html" class="hover:text-[#8C0000]">OUR SERVICES</a>
+      <a href="contact.html" class="hover:text-[#8C0000]">CONTACT US</a>
+    </nav>
+
+    <div class="mt-4 flex items-center space-x-2">
+      <i class="fas fa-headset text-[#1E90FF]"></i>
+      <span class="font-bold text-[#0A2A43]"> 510-990-1811</span>
+    </div>
+    <p class="text-xs text-gray-500 mt-1">Mon–Fri: 6AM – 8PM</p>
+  </div>
+</header>
+
+
+<!-- JS -->
+<script>
+  document.getElementById('menuBtn').onclick = () => {
+    document.getElementById('mobileMenu').classList.toggle('hidden');
+  };
+</script>
+
+
+<!-- ================= ABOUT US BANNER ================= -->
+<section class="relative w-full h-[300px] md:h-[400px] overflow-hidden mt-10">
+
+  <!-- Background Image -->
+  <img src="aboutpagebanner.webp" class="w-full h-full object-cover">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <!-- Banner Text -->
+  <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+    <h1 class="text-white text-4xl md:text-6xl font-bold tracking-wide">
+      OUR FLEET
+    </h1>
+    <p class="text-white text-lg md:text-xl mt-3 opacity-90">
+      Safe, Comfortable & Fully Equipped Medical Transportation Vehicles
+    </p>
+  </div>
+
+</section>
+
+
+<section class="py-16 px-6 md:px-12 bg-white">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- LEFT IMAGE -->
+    <div>
+      <img 
+        src="fleetimg1.jpg" 
+        alt="ADA Compliant Vehicle Service"
+        class="w-full h-auto rounded-xl shadow-lg object-cover"
+      />
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+        ADA-Compliant Vehicles
+      </h2>
+
+      <p class="text-gray-700 leading-relaxed mb-6">
+        At <span class="font-semibold">S&K Medical Transportation</span>, 
+        we take care of the difficult task of arranging transportation 
+        for individuals with mobility challenges. We work to relieve stress 
+        by removing confusion and accommodating any difficulties that may 
+        arise during their trips to and from medical care.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Our ADA-compliant, fully customized vans and shuttles provide:
+      </p>
+
+      <!-- Bullet Points -->
+      <ul class="space-y-4">
+
+        <li class="flex items-start space-x-3">
+          <span class="text-blue-600 text-xl">✔</span>
+          <p class="text-gray-800">
+            Ramps with non-skid surfaces for safer access
+          </p>
+        </li>
+
+        <li class="flex items-start space-x-3">
+          <span class="text-blue-600 text-xl">✔</span>
+          <p class="text-gray-800">
+            Power wheelchair lifts available for handicapped entrance
+          </p>
+        </li>
+
+        <li class="flex items-start space-x-3">
+          <span class="text-blue-600 text-xl">✔</span>
+          <p class="text-gray-800">
+            Side-entry access for easier sidewalk approach
+          </p>
+        </li>
+
+        <li class="flex items-start space-x-3">
+          <span class="text-blue-600 text-xl">✔</span>
+          <p class="text-gray-800">
+            Simple pedestrian entrance for able-bodied passengers & walker users
+          </p>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+  <section class="py-16 px-6 md:px-12 bg-white">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+    <!-- LEFT CONTENT -->
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+        Our Comfort, Safe, <br class="hidden md:block" />
+        Reliable Vehicles
+      </h2>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        S&K Medical Transportation’s passion is our business, and 
+        <span class="font-semibold">“Service”</span> is our motto.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        We strongly believe that the safety of our healthcare partners, 
+        patients, and medical teams is critical. That is why we operate 
+        highly maintained, wheelchair-accessible vehicles designed for safe, 
+        smooth, and reliable medical transportation.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Our fleet includes wheelchair-accessible Dodge Grand Caravans 
+        (also known as wheelchair minivans) and Transit Commercial 
+        Wheelchair Transport vans — all equipped with the latest 
+        <span class="font-semibold">Safety Standards</span>.
+      </p>
+
+      <p class="text-gray-700 leading-relaxed">
+        Every vehicle is GPS tracked 24/7. Speed and driver behavior are 
+        continuously monitored to ensure the highest level of safety on 
+        every trip.
+      </p>
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="flex justify-center">
+      <img 
+        src="fleetimg2.jpg" 
+        alt="S&K Medical Transport Vehicle"
+        class="w-full max-w-md md:max-w-full object-contain"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="bg-[#0A2A43] text-white relative">
+
+  <!-- Background overlay image -->
+  <div class="absolute inset-0 opacity-10 bg-cover bg-center"
+       style="background-image: url('your-background-image.jpg');"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-10">
+
+    <!-- ========== Column 1: About ========== -->
+    <div>
+    
+
+      <p class="text-gray-300 leading-relaxed">
+        We provide professional door-to-door medical transportation with comfort and safety.  
+        S&K Medical Transportation offers non-emergency transportation services across  
+        Fremont, CA — available 24 hours a day, seven days a week.
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex space-x-4 mt-6">
+        <a href="#" class="h-10 w-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition">
+          <i class="fab fa-facebook-f text-white text-xl"></i>
+        </a>
+        <a href="#" class="h-10 w-10 bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition">
+          <i class="fab fa-yelp text-white text-xl"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- ========== Column 2: Useful Links ========== -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-4 border-b border-white/20 pb-1">Useful Links</h3>
+
+      <ul class="space-y-3 text-gray-300">
+        <li><a href="index.html" class="hover:text-white">› Home</a></li>
+        <li><a href="services.html" class="hover:text-white">› Our Services</a></li>
+        <li><a href="policy.html" class="hover:text-white">› Privacy Policy</a></li>
+        <li><a href="about.html" class="hover:text-white">› About Us</a></li>
+        <li><a href="fleet.html" class="hover:text-white">› Our Fleet</a></li>
+        <li><a href="contact.html" class="hover:text-white">› Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- ========== Column 3: Contact Us ========== -->
+    <div>
+      <h3 class="text-2xl font-semibold mb-4 border-b border-white/20 pb-1">Contact Us</h3>
+
+     
+
+      <p class="mt-3 text-gray-300">
+        Phone: <span class="text-white font-semibold">510-990-1811</span>
+      </p>
+
+      <p class="text-gray-300">
+        Email: <span class="text-white font-semibold">info@sandkmedtransit.com</span>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="border-t border-white/20 py-4 text-center text-gray-300 text-sm">
+    Copyright © 2025 S&K Medical Transportation. All rights reserved.
+  </div>
+</footer>
+
+
+
+</body>
+</html>
